@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunksaga_docs=self.webpackChunksaga_docs||[]).push([[475],{9703:function(s){s.exports=JSON.parse('{"allTagsPath":"/docs-public/blog/tags","slug":"/docs-public/blog/tags/facebook","name":"facebook","count":1,"permalink":"/docs-public/blog/tags/facebook"}')}}]);
