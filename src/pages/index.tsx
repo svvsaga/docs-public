@@ -17,7 +17,12 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            Se dokumentasjonen
+          </Link>
+          <Link
+            className="button button--secondary button--lg"
+            to="https://saga-datacatalog-prod-lszg.ew.r.appspot.com/">
+            Besøk datakatalogen
           </Link>
         </div>
       </div>
