@@ -9,7 +9,7 @@ const config = {
   title: 'Saga',
   tagline: 'Dataplattformen til Statens vegvesen',
   url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  baseUrl: '/docs-public/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
