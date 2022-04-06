@@ -14,11 +14,11 @@ I dag er det ikke trivielt for en dataviter å utføre analyse på disse dataene
 - Ulike teknologier
 - Krever teknisk kompetanse
 
-Med dataplattformen Saga ønsker vi å samle mest mulig relevant data, tilgjengeliggjøre disse på et standardisert og kompatibelt format som gjør det enkelt å utføre analyser og sammenstillinger på disse, uten å måtte bruke mye tid på oppsett og byråkrati.
+Med dataplattformen Saga ønsker vi å samle mest mulig relevant data, og tilgjengeliggjøre disse på et standardisert og kompatibelt format som gjør det enkelt å utføre analyser og sammenstillinger, uten å måtte bruke mye tid på oppsett og byråkrati.
 
 Dette er mulig gjennom bruk av moderne skyteknologi i Google Cloud Platform, samt en rekke verktøy og dokumentasjon som legger til rette for at datavitere og andre kan komme i gang med analyser på en enkel og smertefri måte.
 
-## **Når bør man velge Saga som analyseplattform?**
+## Når bør man velge Saga som analyseplattform?
 
 Saga tilbyr en rekke tjenester som er nyttige for deg som er dataanalytiker, dataviter eller dataingeniør i Statens vegvesen, spesielt når det kommer til det å skaffe seg innsikt i - og sammenstille data fra - forskjellige kilder når datamengdene blir store.
 
