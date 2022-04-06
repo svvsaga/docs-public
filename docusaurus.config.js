@@ -26,7 +26,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: ({ versionDocsDirPath, docPath }) =>
-            `https://github.com/svvsaga/docs-public/edit/${versionDocsDirPath}/${docPath}`,
+            `https://github.com/svvsaga/docs-public/edit/main/${versionDocsDirPath}/${docPath}`,
         },
         blog: false,
         theme: {
