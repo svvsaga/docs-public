@@ -20,7 +20,7 @@ Dette er mulig gjennom bruk av moderne skyteknologi i Google Cloud Platform, sam
 
 ## **Når bør man velge Saga som analyseplattform?**
 
-Saga tilbyr en rekke tjenester som er nyttige for deg som er dataanalytiker eller data scientist i Statens vegvesen, spesielt når det kommer til det å skaffe seg innsikt i, og sammenstille data fra forskjellige kilder når datamengdene blir store.
+Saga tilbyr en rekke tjenester som er nyttige for deg som er dataanalytiker, dataviter eller dataingeniør i Statens vegvesen, spesielt når det kommer til det å skaffe seg innsikt i - og sammenstille data fra - forskjellige kilder når datamengdene blir store.
 
 Datasettene du finner i plattformens [Datakatalog](https://saga-datacatalog-prod-lszg.ew.r.appspot.com/) inneholder data som er tilgjengeliggjort fra mange forskjellige kilder, bl.a. Vegloggen/HBT, Trafikkdata og Vegvær. Innholdet i disse datasettene er standardisert på en måte som gjør at det er enkelt å sammenstille data på tvers av kildene. Dette er gjort ved at ofte brukte felter som feks tidsstempler, lokasjoner og geografier har samme form i alle datasettene, slik at de kan brukes til å avdekke sammenfallende rader.
 
