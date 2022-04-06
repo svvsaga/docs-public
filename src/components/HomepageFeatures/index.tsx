@@ -32,7 +32,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Med ofte brukte datasett standardisert og samlet på samme sted kan man enklere se sammenhenger.
+        Med populære og standardiserte datasett på samme sted, kan man enklere se sammenhenger.
       </>
     ),
   },
