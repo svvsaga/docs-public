@@ -32,7 +32,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Amet elit ad consectetur proident proident fugiat dolore anim consequat anim sunt mollit occaecat.
+        Med ofte brukte datasett standardisert og samlet på samme sted kan man enklere se sammenhenger.
       </>
     ),
   },
