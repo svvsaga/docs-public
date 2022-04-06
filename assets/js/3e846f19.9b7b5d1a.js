@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunksaga_docs=self.webpackChunksaga_docs||[]).push([[537],{550:function(a){a.exports=JSON.parse('{"allTagsPath":"/docs-public/blog/tags","slug":"/docs-public/blog/tags/datakatalog","name":"datakatalog","count":1,"permalink":"/docs-public/blog/tags/datakatalog"}')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunksaga_docs=self.webpackChunksaga_docs||[]).push([[535],{5641:function(s){s.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Saga datakatalog er lansert","permalink":"/docs-public/blog/Lansering"}]}')}}]);
