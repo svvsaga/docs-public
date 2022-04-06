@@ -23,7 +23,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Når du vet mer, kan du gjøre mer.
+        Når du vet mer, kan du treffe bedre beslutninger!
       </>
     ),
   },
