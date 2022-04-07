@@ -39,9 +39,9 @@ Se også [Googles introduksjon til BigQuery](https://cloud.google.com/bigquery/d
 
 ## Prismodell
 
-Når man gjør spørringer mot BigQuery betaler for _mengden data spørringen prosesserer_, heller enn kjøretetid og ressursbruk.
+Når man gjør spørringer mot BigQuery betaler man for _mengden data spørringen prosesserer_, heller enn kjøretetid og ressursbruk.
 
-Editoren i [BigQuery i Cloud Console](https://console.cloud.google.com/bigquery) som kan brukes til å utforme og kjøre SQL-spørringer gir et anslag på hvor data en spørring kommer til å prosessere før den kjøres. Denne funksjonaliteten kan være grei å holde et øye med før spørringer kjøres! Om du har flere spørringer i samme vindu kan du markere den spørringen du ønsker å se størrelsesestimatet for.
+Editoren i [BigQuery i Cloud Console](https://console.cloud.google.com/bigquery) som kan brukes til å utforme og kjøre SQL-spørringer gir et anslag på hvor mye data en spørring kommer til å prosessere før den kjøres. Denne funksjonaliteten kan være grei å holde et øye med før spørringer kjøres! Om du har flere spørringer i samme vindu kan du markere den spørringen du ønsker å se størrelsesestimatet for.
 
 ![BigQuery spørring estimert kostnad](img/query-estimert-kostnad.png)
 
