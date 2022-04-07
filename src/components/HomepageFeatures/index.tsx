@@ -61,7 +61,11 @@ export default function HomepageFeatures(): JSX.Element {
           ))}
         </div>
         <div className="row">
-          <div className={clsx('col text--center', styles.gettingStarted)}>
+          <div
+            className={clsx(
+              'col text--center margin-top--lg',
+              styles.gettingStarted
+            )}>
             <Link to="/google-cloud-platform/kom-i-gang">Kom i gang!</Link>
           </div>
         </div>
