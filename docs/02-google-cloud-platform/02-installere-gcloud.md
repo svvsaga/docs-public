@@ -1,6 +1,6 @@
 # Sette opp Google Cloud SDK
 
-Noen ganger er den ønskelig å kjøre kommandoer mot tjenester hos GCP fra lokal
+Noen ganger er det ønskelig å kjøre kommandoer mot tjenester hos GCP fra lokal
 maskin eller fra en VDI med WSL. Da kan det være kjekt å installere Google Cloud
 SDK, og dra nytte av kommandolinjeverktøy som `gcloud`, `bq` og `gsutil`.
 
