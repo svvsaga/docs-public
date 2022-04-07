@@ -1,18 +1,18 @@
-import React from "react";
-import clsx from "clsx";
-import Link from "@docusaurus/Link";
-import styles from "./styles.module.css";
+import React from 'react'
+import clsx from 'clsx'
+import Link from '@docusaurus/Link'
+import styles from './styles.module.css'
 
 type FeatureItem = {
-  title: string;
-  Svg: React.ComponentType<React.ComponentProps<"svg">>;
-  description: JSX.Element;
-};
+  title: string
+  Svg: React.ComponentType<React.ComponentProps<'svg'>>
+  description: JSX.Element
+}
 
 const FeatureList: FeatureItem[] = [
   {
-    title: "Enkelt å bruke",
-    Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
+    title: 'Enkelt å bruke',
+    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
         Saga senker terskelen for å komme i gang med dataanalyse på tvers av
@@ -21,13 +21,13 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: "Gjør datadrevne valg",
-    Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
+    title: 'Gjør datadrevne valg',
+    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: <>Når du vet mer, kan du treffe bedre beslutninger!</>,
   },
   {
-    title: "Alt på ett sted",
-    Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
+    title: 'Alt på ett sted',
+    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
         Med populære og standardiserte datasett på samme sted, kan man enklere
@@ -35,11 +35,11 @@ const FeatureList: FeatureItem[] = [
       </>
     ),
   },
-];
+]
 
 function Feature({ title, Svg, description }: FeatureItem) {
   return (
-    <div className={clsx("col col--4")}>
+    <div className={clsx('col col--4')}>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>
@@ -48,7 +48,7 @@ function Feature({ title, Svg, description }: FeatureItem) {
         <p>{description}</p>
       </div>
     </div>
-  );
+  )
 }
 
 export default function HomepageFeatures(): JSX.Element {
@@ -61,11 +61,11 @@ export default function HomepageFeatures(): JSX.Element {
           ))}
         </div>
         <div className="row">
-          <div className={clsx("col text--center", styles.gettingStarted)}>
+          <div className={clsx('col text--center', styles.gettingStarted)}>
             <Link to="/google-cloud-platform/kom-i-gang">Kom i gang!</Link>
           </div>
         </div>
       </div>
     </section>
-  );
+  )
 }
