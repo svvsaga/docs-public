@@ -56,39 +56,3 @@ BigQuery databasen er _kolonnebasert_, noe som betyr at det er veldig mye å spa
 Det betyr også at kolonnen i sin helhet må hentes om den spørres på, med mindre [clustering](https://cloud.google.com/bigquery/docs/clustered-tables) eller [partisjonering](https://cloud.google.com/bigquery/docs/partitioned-tables) er i bruk, selv om spørringen f.eks. har en `WHERE`-clause eller andre mekanismer for filtrering av enkeltrader.
 
 At de underliggende dataene ligger lagret samlokalisert per kolonne er en av grunnene til at denne typen databaser passer så godt til analytiske oppgaver der det er høye krav til rask prosessering av queries.
-
-## Måter å bruke BigQuery på
-
-Du kan bruke BigQuery fra:
-
-- [Google Cloud Console](https://console.cloud.google.com/bigquery)
-- Egen maskin (via `bq` eller et SQL-verktøy)
-- Jupyter Notebooks, f.eks. i [Google Colab](https://colab.research.google.com/)
-
-## Koble seg opp til BigQuery fra egen maskin
-
-For å kalle BigQuery fra egen maskin må du ha satt opp autentisering. Den enkleste måten å gjøre dette på er å bruke [Google Cloud CLI (gcloud)](https://cloud.google.com/sdk/docs/install).
-
-Når du har fulgt installasjonsveilederen i linken over, kan du kjøre følgende:
-
-```bash
-gcloud auth login
-gcloud auth application-default login
-```
-
-For hver av disse vil du få opp en nettside der du må godkjenne innlogging med din `<fornavn.etternavn>@vegvesen.no`-bruker.
-
-Før du kan begynne å gjøre spørringer bør du sette opp default project og default quota project (sett inn IDen til ditt prosjekt):
-
-```bash
-gcloud config set project saga-olanor-playground-1234
-gcloud auth application-default set-quota-project saga-olanor-playground-1234
-```
-
-## Laste opp egne datasett
-
-Hvis du har egne datasett liggende i CSV eller JSON-format og ønsker å bruke disse til analyse i BigQuery kan du følge Googles guide for [CSV](https://cloud.google.com/bigquery/docs/loading-data-cloud-storage-csv#loading_csv_data_into_a_table), [JSON](https://cloud.google.com/bigquery/docs/loading-data-cloud-storage-json#loading_json_data_into_a_new_table) og mange andre andre formater.
-
-## Laste ned datasett og resultater
-
-Du kan enkelt laste ned datasett og resultatet fra BigQuery Cloud Console. [Se denne siden for et eksempel.](bigquery/laste-ned-datasett)
