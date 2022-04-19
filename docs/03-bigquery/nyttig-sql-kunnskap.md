@@ -61,7 +61,7 @@ GROUP BY
 
 Bigquery støtter at felter kan være repeterende innad i en rad. Denne type data kan man spørre ut ved å "krysse" radene fra den opprinnelige tabellen mot resultatet av operasjonen `UNNEST()`.
 
-Eksempelet under viser hvordan den opprinnelige radens `trpId` og `dato` blir krysset med hver oppføring i det repeterende feltet `byLane`, og man ender med å få vist trafikk per felt per time for det valgte trafikktellepunktet den gitte dagen..
+Eksempelet under viser hvordan den opprinnelige radens `trpId` og `dato` blir krysset med hver oppføring i det repeterende feltet `byLane`, og man ender med å få vist trafikk per felt per time for det valgte trafikktellepunktet den gitte dagen.
 
 ```sql
 SELECT
