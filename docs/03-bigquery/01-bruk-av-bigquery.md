@@ -37,13 +37,13 @@ gcloud auth application-default set-quota-project saga-olanor-playground-1234
 
 ## Laste opp egne datasett
 
-Hvis du har egne datasett liggende i CSV eller JSON-format og ønsker å bruke disse til analyse i BigQuery kan du følge Googles guide for [CSV](https://cloud.google.com/bigquery/docs/loading-data-cloud-storage-csv#loading_csv_data_into_a_table), [JSON](https://cloud.google.com/bigquery/docs/loading-data-cloud-storage-json#loading_json_data_into_a_new_table) og mange andre andre formater.
+Hvis du har egne datasett liggende i CSV eller JSON-format og ønsker å bruke disse til analyse i BigQuery kan du følge Googles guide for [CSV](https://cloud.google.com/bigquery/docs/loading-data-cloud-storage-csv#loading_csv_data_into_a_table), [JSON](https://cloud.google.com/bigquery/docs/loading-data-cloud-storage-json#loading_json_data_into_a_new_table) og mange andre formater.
 
 ## Laste ned datasett og resultater
 
 Det finnes mange måter å hente data ut fra BigQuery på. Her følger en forklaring på hvordan datasett og resultat av spørringer i BigQuery Cloud Console enkelt kan eksporteres som JSON.
 
-For å kunne eksportere data må du først ha opprettet en GCP-bruker og et prosjekt
+For å kunne eksportere data må du først ha opprettet en GCP-bruker og et prosjekt.
 
 1. Gå til [Målestasjoner-datasettet i BigQuery](https://console.cloud.google.com/bigquery?p=saga-vegvar-prod-znny&d=standardized&t=maalestasjoner&page=table).
 
