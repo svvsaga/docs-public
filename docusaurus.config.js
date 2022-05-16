@@ -41,7 +41,7 @@ const config = {
       navbar: {
         title: 'Saga',
         logo: {
-          src: 'img/svv-logo.svg',
+          src: 'img/saga-visuals.svg',
         },
         items: [
           {
