@@ -13,6 +13,7 @@
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #F39200;
+
 }
 
 .docusaurus-highlight-code-line {
@@ -44,4 +45,20 @@
 .navbar__title {
   max-width: 10em;
   white-space: break-spaces;
+}
+
+/* Custom modifications to the landing page*/
+.landing-page {
+  padding: 10rem;
+}
+
+[data-theme='light'] .button--secondary {
+    background-color: rgba(0, 0, 0);
+    color: white;
+}
+
+ .button--secondary:hover {
+  background-color: #F39200;
+  border-color: #F39200;
+  color: rgba(0, 0, 0);
 }
