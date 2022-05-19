@@ -49,7 +49,7 @@
 
 /* Custom modifications to the landing page*/
 .landing-page {
-  padding: 10rem;
+  padding: 8rem;
 }
 
 [data-theme='light'] .button--secondary {
@@ -61,4 +61,16 @@
   background-color: #F39200;
   border-color: #F39200;
   color: rgba(0, 0, 0);
+}
+
+/* Animation */
+.animation {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: black;
 }
