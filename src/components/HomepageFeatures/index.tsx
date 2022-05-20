@@ -8,17 +8,21 @@ export default function HomepageFeatures(): JSX.Element {
     <section className={styles.features}>
       <div className="container">
         <div className="landing-page">
-          <h1 className="hero__title">Saga dokumentasjon</h1>
-          <p className="hero__subtitle">
-            Vi senker terskelen for å komme i gang med dataanalyse på tvers av
-            vegvesenets mange ulike datakilder.
-          </p>
-          <div className={styles.buttons}>
-            <Link className="button button--secondary button--lg" to="/intro">
-              Les dokumentasjonen
-            </Link>
-            <Animation />
+          <div className="information"> 
+            <h1 className="hero__title">Saga</h1>
+            <h1 className="hero__title">dokumentasjon</h1>
+            <p className="hero__subtitle">
+              Vi senker terskelen for å komme i gang med dataanalyse på tvers av
+              vegvesenet.
+            </p>
+            <div className="extra-space"/>
+            <div className={styles.buttons}>
+              <Link className="button button--secondary button--lg" to="/intro">
+                Les dokumentasjonen
+              </Link>
+            </div>
           </div>
+          <Animation className="animation"/>
         </div>
       </div>
     </section>

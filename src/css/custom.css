@@ -48,8 +48,9 @@
 }
 
 /* Custom modifications to the landing page*/
-.landing-page {
-  padding: 8rem;
+.information {
+  padding-left: 10rem;
+  max-width: 100%;
 }
 
 [data-theme='light'] .button--secondary {
@@ -63,14 +64,39 @@
   color: rgba(0, 0, 0);
 }
 
+.extra-space {
+  margin-top: 3rem;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.landing-page {
+  display: flex;
+  padding-top: 8rem;
+}
+
+@media (max-width: 1440px){
+  .landing-page {
+    flex-wrap: wrap;
+    padding-top: 3rem;
+    padding-left: 0rem;
+  }
+
+  .information {
+    padding-left: 5rem;
+  }
+
+  .animation {
+    margin-left: 1rem;
+  }
+}
+
 /* Animation */
 .animation {
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
   z-index: -1;
-  background: black;
 }
