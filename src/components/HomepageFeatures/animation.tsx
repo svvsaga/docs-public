@@ -1,3 +1,5 @@
+//Originated from https://codepen.io/toshiya-marukubo/pen/qBXbWZZ
+
 import React, { useRef, useEffect } from 'react'
 
 type Config = {
@@ -23,7 +25,7 @@ const initialize = (canvas) => {
     width: canvas.width,
     height: canvas.height,
     shapes: new Array<Shape>(),
-    size: 30,
+    size: 50,
     num: 10,
     maxDist: 0,
   }
@@ -60,7 +62,7 @@ const ease = (x) => {
 }
 
 const draw = (config, ctx, timestamp: number) => {
-  const t = timestamp * 0.00005
+  const t = timestamp * 0.00002
 
   ctx.save()
   ctx.globalCompositeOperation = 'lighter'
@@ -69,10 +71,9 @@ const draw = (config, ctx, timestamp: number) => {
 
   for (let j = 0; j < 3; j++) {
     let color
-
-    if (j === 0) color = '#FF0000'
-    if (j === 1) color = '#00FF00'
-    if (j === 2) color = '#0000FF'
+     if (j === 0) color = '#F39200'
+     if (j === 1) color = '#DADAD9'
+     if (j === 2) color = '#434F55'
     for (let i = 0; i < config.shapes.length; i++) {
       ctx.save()
 
@@ -116,7 +117,8 @@ const draw = (config, ctx, timestamp: number) => {
       ctx.arc(
         config.shapes[i].x + moveX,
         config.shapes[i].y + moveY,
-        config.size / 3,
+        config.size / 3 
+        + j,
         0,
         Math.PI * 2,
         false
@@ -190,7 +192,7 @@ class Utils {
   }
 }
 
-export default function Animation(): JSX.Element {
+export default function  Animation({ className: string }): JSX.Element {
   const canvasRef = useRef(null)
 
   useEffect(() => {
@@ -210,5 +212,5 @@ export default function Animation(): JSX.Element {
     }
   }, [draw])
 
-  return <canvas ref={canvasRef} width="350" height="350" style={{}} />
+  return <canvas className={"animation"} ref={canvasRef} width="600" height="600" style={{}} />
 }
