@@ -80,6 +80,24 @@
   padding-top: 8rem;
 }
 
+.footer {
+  background-color: #18191A;
+}
+
+.footer__bottom {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__copyright {
+  display: flex;
+  text-align:left;
+}
+
+
+/* For smaller screen sizes*/
 @media (max-width: 1440px){
   .landing-page {
     flex-wrap: wrap;
