@@ -49,7 +49,7 @@
 
 /* Custom modifications to the landing page*/
 .information {
-  padding-left: 10rem;
+  /* padding-left: 10rem; */
   max-width: 100%;
 }
 
@@ -82,6 +82,7 @@
 
 .footer {
   background-color: #18191A;
+  padding: 2 0 2 0;
 }
 
 .footer__bottom {
@@ -96,7 +97,6 @@
   text-align:left;
 }
 
-
 /* For smaller screen sizes*/
 @media (max-width: 1440px){
   .landing-page {
@@ -104,15 +104,30 @@
     padding-top: 3rem;
     padding-left: 0rem;
   }
-
+/* 
   .information {
     padding-left: 5rem;
-  }
+  } */
 
   .animation {
-    margin-left: 1rem;
+    margin-left: -3.8rem;
   }
 }
+
+@media (max-width: 800px){
+  .animation {
+    display: none;
+  }
+
+  .information {
+    padding-left: 0rem;
+  }
+}
+
+/* /* @media (max-width: 995px){ */
+  .container {
+    padding-left: 3rem;
+  }
 
 /* Animation */
 .animation {
