@@ -13,7 +13,7 @@ export default function HomepageFeatures(): JSX.Element {
             <h1 className="hero__title">dokumentasjon</h1>
             <p className="hero__subtitle">
               Vi senker terskelen for å komme i gang med dataanalyse på tvers av
-              vegvesenet.
+              Vegvesenet.
             </p>
             <div className="extra-space"/>
             <div className={styles.buttons}>
