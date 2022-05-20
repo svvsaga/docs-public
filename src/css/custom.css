@@ -49,7 +49,6 @@
 
 /* Custom modifications to the landing page*/
 .information {
-  /* padding-left: 10rem; */
   max-width: 100%;
 }
 
@@ -104,10 +103,6 @@
     padding-top: 3rem;
     padding-left: 0rem;
   }
-/* 
-  .information {
-    padding-left: 5rem;
-  } */
 
   .animation {
     margin-left: -3.8rem;
@@ -123,8 +118,6 @@
     padding-left: 0rem;
   }
 }
-
-/* /* @media (max-width: 995px){ */
   .container {
     padding-left: 3rem;
   }
