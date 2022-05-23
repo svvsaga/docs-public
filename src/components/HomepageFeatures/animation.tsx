@@ -212,5 +212,5 @@ export default function  Animation({ className: string }): JSX.Element {
     }
   }, [draw])
 
-  return <canvas className={"animation"} ref={canvasRef} width="600" height="600" style={{}} />
+  return <canvas className="animation" ref={canvasRef} width="600" height="600" />
 }
