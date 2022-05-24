@@ -11,11 +11,10 @@ export default function HomepageFeatures(): JSX.Element {
           <div className="information"> 
             <h1 className="hero__title">Saga</h1>
             <h1 className="hero__title">dokumentasjon</h1>
-            <p className="hero__subtitle">
+            <p className="hero__subtitle margin-bottom--lg">
               Vi senker terskelen for å komme i gang med dataanalyse på tvers av
               Vegvesenet.
             </p>
-            <div className="extra-space"/>
             <div className={styles.buttons}>
               <Link className="button button--secondary button--lg" to="/intro">
                 Les dokumentasjonen
