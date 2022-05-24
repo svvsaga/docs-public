@@ -20,7 +20,6 @@ type Shape = {
 }
 
 const initialize = (canvas) => {
-  console.log(canvas.width, canvas.height)
   const config: Config = {
     width: canvas.width,
     height: canvas.height,
