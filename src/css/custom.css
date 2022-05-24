@@ -63,10 +63,6 @@
   color: rgba(0, 0, 0);
 }
 
-.extra-space {
-  margin-top: 3rem;
-}
-
 .information {
   display: flex;
   flex-direction: column;
