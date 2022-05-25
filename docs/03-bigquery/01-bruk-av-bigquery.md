@@ -7,7 +7,7 @@ Det finnes mange forskjellige måter å bruke BigQuery på. Du kan f.eks. bruke 
 - Jupyter Notebooks, f.eks. i [Google Colab](https://colab.research.google.com/)
 - Egenskrevne applikasjoner
 
-## Bruker BigQuery fra Google Cloud Console
+## Bruke BigQuery fra Google Cloud Console
 
 Den desidert enkleste måten å komme i gang med BigQuery på er via Google Cloud Console. Her kan man bl.a. utforske eksisterende datasett, deres skjema og kjøre SQL-spørringer direkte i nettleseren.
 
