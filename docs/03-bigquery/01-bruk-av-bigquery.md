@@ -15,7 +15,14 @@ Den desidert enkleste måten å komme i gang med BigQuery på er via Google Clou
 
 Besøk [BigQuery i Google Cloud Console](https://console.cloud.google.com/bigquery)
 
-## Koble seg til BigQuery fra egen maskin
+## Koble seg til BigQuery fra PowerBI
+
+For å koble seg til BigQuery fra PowerBI anbefaler vi å [følge denne guiden.](https://docs.microsoft.com/en-us/power-bi/connect-data/desktop-connect-bigquery), men i tillegg trengs det et ekstra steg. Alle spørringer i BigQuery må kjøre i et prosjekt, og dette prosjektet trenger ikke å være det samme prosjektet hvor dataene ligger. Dette prosjektet må være et prosjekt som du har tilgang til å opprette ressurser i. For datavitere er dette typisk prosjektet du har fått tildelt som har et navn på formen `saga-<navn>-playground-<suffix>`.
+
+Dermed skal du gå [inn i avanserte innstillinger](https://docs.microsoft.com/en-us/power-query/connectors/googlebigquery#connect-using-advanced-options) og sette feltet "Billing Project ID" til ditt prosjekt.
+
+
+## Koble seg til BigQuery fra kommandolinje på egen maskin
 
 For å kalle BigQuery fra egen maskin må du ha satt opp autentisering. Den enkleste måten å gjøre dette på er å bruke [Google Cloud CLI (gcloud)](https://cloud.google.com/sdk/docs/install).
 
