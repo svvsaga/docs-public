@@ -6,21 +6,24 @@ sidebar_position: 1
 
 ## Hva er Saga?
 
-Statens vegvesen har enorme mengder data, fordelt på en rekke systemer, som NVDB, Vegvær, Trafikkdata, m.m..
+Statens vegvesen har enorme mengder data fordelt på en rekke systemer som NVDB, Vegvær, Trafikkdata, Vegloggen/HBT og mange flere.
 
-I dag er det ikke trivielt for en dataviter å utføre analyse på disse dataene, av ulike grunner:
+I dag er det ikke trivielt for en dataanalytiker, dataingeniør eller andre å utføre analyse på disse dataene av ulike grunner:
 
-- Kompleks tilgangsstyring
-- Ulike teknologier
-- Krever teknisk kompetanse
+- Dataene ligger i mange ulike systemer
+- Kan være vanskelig eller tidkrevende å få tilgang til dataene
+- Må beherske ulike teknologier
+- Krevende å analysere store datamengder
+- Krever teknisk kompetanse for å hente dataene og behandle dataene
 
-Med dataplattformen Saga ønsker vi å samle mest mulig relevant data, og tilgjengeliggjøre disse på et standardisert og kompatibelt format som gjør det enkelt å utføre analyser og sammenstillinger, uten å måtte bruke mye tid på oppsett og byråkrati.
+Med dataplattformen Saga ønsker vi å samle mest mulig relevant data, og tilgjengeliggjøre disse på et standardisert og kompatibelt format som gjør det enkelt å utføre analyser og sammenstillinger, uten å måtte bruke mye tid på oppsett, leting etter data og bestillinger.
 
-Dette er mulig gjennom bruk av moderne skyteknologi i Google Cloud Platform, samt en rekke verktøy og dokumentasjon som legger til rette for at datavitere og andre kan komme i gang med analyser på en enkel og smertefri måte.
+Dette er mulig gjennom bruk av moderne skyteknologi i Google Cloud Platform, samt en rekke verktøy og dokumentasjon som legger til rette for at dataanalytikere, dataingeniører og andre kan komme i gang med analyser på en enkel og smertefri måte.
+
 
 ## Når bør man velge Saga som analyseplattform?
 
-Saga tilbyr en rekke tjenester som er nyttige for deg som er dataanalytiker, dataviter eller dataingeniør i Statens vegvesen, spesielt når det kommer til det å skaffe seg innsikt i - og sammenstille data fra - forskjellige kilder når datamengdene blir store.
+Saga tilbyr en rekke tjenester som er nyttige for deg som er dataanalytiker, dataingeniør eller domeneteam i Statens vegvesen, spesielt når det kommer til det å skaffe seg innsikt i - og sammenstille data fra - forskjellige kilder når datamengdene blir store.
 
 Datasettene du finner i plattformens [Datakatalog](https://saga-datacatalog-prod-lszg.ew.r.appspot.com/) inneholder data som er tilgjengeliggjort fra mange forskjellige kilder, bl.a. Vegloggen/HBT, Trafikkdata og Vegvær. Innholdet i disse datasettene er standardisert slik at det er enkelt å sammenstille data på tvers av kildene. Dette er gjort ved at ofte brukte felter som tidsstempler, lokasjoner og geografier har samme form i alle datasettene, slik at de kan brukes til å avdekke sammenfallende rader.
 
