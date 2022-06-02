@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## Hva er Saga?
 
-Statens vegvesen har enorme mengder data fordelt på en rekke systemer som eksempelvis NVDB, Vegvær, Trafikkdata og Vegloggen/HBT.
+Statens vegvesen har enorme mengder data fordelt på en rekke systemer som for eksempel NVDB, Vegvær, Trafikkdata og Vegloggen/HBT.
 
 I dag er det ikke trivielt for en dataanalytiker, dataingeniør eller andre å utføre analyse på disse dataene av ulike grunner:
 
@@ -28,11 +28,11 @@ Saga tilbyr en rekke tjenester som er nyttige for deg som er dataanalytiker, dat
 
 Datasettene du finner i plattformens [Datakatalog](https://saga-datacatalog-prod-lszg.ew.r.appspot.com/) inneholder data som er tilgjengeliggjort fra mange forskjellige kilder, blant annet Vegloggen/HBT, Trafikkdata og Vegvær. Innholdet i disse datasettene er standardisert slik at du kan sammenstille data på tvers av ulike kilder. Dette er gjort ved at felter som er ofte brukt (eksempelvis tidsstempler, lokasjoner og geografier) har samme form i alle datasettene, slik at de kan brukes til å avdekke sammenfallende rader.
 
-De fleste datasettene på plattformen er tilgjengeliggjort i sin standardiserte form i [BigQuery](bigquery). Her kan man dra nytte av eksisterende SQL-kunnskap for å gjøre avanserte analyser på store mengder data, med bruk av kraftige analytiske funksjoner og god [GIS-funksjonalitet](https://cloud.google.com/bigquery/docs/geospatial-data). Resultat av analyser kan enkelt deles med andre for samarbeid eller videre bruk på plattformen. Resultatene kan også eksporteres til andre verktøy som [Google Data Studio](https://datastudio.google.com/) eller [Power BI](https://powerbi.microsoft.com/) for mer visuelle og interaktive rapporter.
+De fleste datasettene på plattformen er tilgjengeliggjort i sin standardiserte form i [BigQuery](bigquery). Her kan du dra nytte av eksisterende SQL-kunnskap for å gjøre avanserte analyser på store mengder data, med bruk av kraftige analytiske funksjoner og god [GIS-funksjonalitet](https://cloud.google.com/bigquery/docs/geospatial-data). Resultat av analyser kan enkelt deles med andre for samarbeid eller videre bruk på plattformen. Resultatene kan også eksporteres til andre verktøy som [Google Data Studio](https://datastudio.google.com/) eller [Power BI](https://powerbi.microsoft.com/) for mer visuelle og interaktive rapporter.
 
 Det er også mulig å eksportere de resulterende dataene/tabellene fra analyser i BigQuery til fil-lageret Google Cloud Storage (GCS). Da kan du ta vare på eller tilgjengeliggjøre store mengder data for tredjeparts verktøy. GCS er også godt egnet for import av store mengder filer til GCP, da disse kan dras nytte av fra BigQuery eller andre verktøy til bruk i videre analyser.
 
-All rådata som ligger til grunn for de standardiserte dataene i Saga ligger også lagret i GCS. På denne måten er de tilgjengelige om man ønsker å reprossesere data, enten for å rette feil eller for at man trenger å utlede annen informasjon enn det som allerede er standardisert.
+All rådata som ligger til grunn for de standardiserte dataene i Saga ligger også lagret i GCS. På denne måten er de tilgjengelige om du ønsker å reprossesere data, enten for å rette feil eller for at du trenger å utlede annen informasjon enn det som allerede er standardisert.
 
 Siden datasettene på Saga ligger i BigQuery, kan de også sammenstilles med eksisterende offentlige datasett, som de som ligger i [Google Cloud Public Dataset Program](https://cloud.google.com/bigquery/public-data). Her finnes flere hundre åpne datasett med eksempelvis COVID-19 data, OpenStreetMap og globale værvarsel.
 

@@ -1,10 +1,10 @@
 # Bruk av BigQuery
 
-Det finnes mange forskjellige måter å bruke BigQuery på. Du kan f.eks. bruke BigQuery fra:
+Det finnes mange forskjellige måter å bruke BigQuery på. Du kan eksempelvis bruke BigQuery fra:
 
 - Google Cloud Console
 - Egen maskin (via `bq` eller et SQL-verktøy)
-- Jupyter Notebooks, f.eks. i [Google Colab](https://colab.research.google.com/)
+- Jupyter Notebooks, eksempelvis i [Google Colab](https://colab.research.google.com/)
 - Egenskrevne applikasjoner
 
 ## Bruke BigQuery fra Google Cloud Console
@@ -20,7 +20,6 @@ Besøk [BigQuery i Google Cloud Console](https://console.cloud.google.com/bigque
 For å koble seg til BigQuery fra PowerBI anbefaler vi å [følge denne guiden.](https://docs.microsoft.com/en-us/power-bi/connect-data/desktop-connect-bigquery), men i tillegg trengs det et ekstra steg. Alle spørringer i BigQuery må kjøre i et prosjekt, og dette prosjektet trenger ikke å være det samme prosjektet hvor dataene ligger. Dette prosjektet må være et prosjekt som du har tilgang til å opprette ressurser i. For datavitere er dette typisk prosjektet du har fått tildelt som har et navn på formen `saga-<navn>-playground-<suffix>`.
 
 Dermed skal du gå [inn i avanserte innstillinger](https://docs.microsoft.com/en-us/power-query/connectors/googlebigquery#connect-using-advanced-options) og sette feltet "Billing Project ID" til ditt prosjekt.
-
 
 ## Koble seg til BigQuery fra kommandolinje på egen maskin
 
@@ -79,10 +78,10 @@ Denne spørringen vil hente ut alle minimums- og maksimumstemperaturer mellom 1.
 
 ![Lagre resultater i BigQuery console](img/laste-ned-datasett-1.webp)
 
-4. Du vil få spørsmål om ulike lagringsmuligheter. Velg f.eks. **JSON (local file).** Denne nedlastingen støtter opp til 16 000 rader.
+4. Du vil få spørsmål om ulike lagringsmuligheter. Velg for eksempelvis **JSON (local file).** Denne nedlastingen støtter opp til 16 000 rader.
 
-Deretter kan du åpne JSON-filen i et tekstredigeringsprogram, som f.eks. [Visual Studio Code](https://code.visualstudio.com/).
+Deretter kan du åpne JSON-filen i et tekstredigeringsprogram, som eksempelvis [Visual Studio Code](https://code.visualstudio.com/).
 
 ![Vise JSON-data i VS Code](img/laste-ned-datasett-2.webp)
 
-Denne dataen kan prosesseres videre offline, f.eks. ved hjelp av verktøy som [jq](https://stedolan.github.io/jq/), eller lastes inn i et annet analyseprogram, som Excel, [Data Studio](https://datastudio.google.com/) eller [Power BI](https://powerbi.microsoft.com/).
+Dataen kan prosesseres videre offline, ved hjelp av verktøy som [jq](https://stedolan.github.io/jq/), eller lastes inn i et annet analyseprogram, som Excel, [Data Studio](https://datastudio.google.com/) eller [Power BI](https://powerbi.microsoft.com/).
