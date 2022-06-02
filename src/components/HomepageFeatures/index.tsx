@@ -16,7 +16,7 @@ export default function HomepageFeatures(): JSX.Element {
               Vegvesenet.
             </p>
             <div className={styles.buttons}>
-              <Link className="button button--secondary button--lg" to="/01-intro/intro">
+              <Link className="button button--secondary button--lg" to="/intro">
                 Les dokumentasjonen
               </Link>
             </div>
