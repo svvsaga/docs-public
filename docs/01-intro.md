@@ -16,7 +16,7 @@ I dag er det ikke trivielt for en dataanalytiker, dataingeniør eller andre å u
 - Det er krevende å analysere store datamengder.
 - Det kreves teknisk kompetanse for å hente dataene og behandle dataene.
 
-Med dataplattformen Saga ønsker vi å samle mest mulig relevant data og tilgjengeliggjøre disse på et standardisert og kompatibelt format. Dette skal gjøre det bedre å utføre analyser og sammenstillinger uten å måtte bruke mye tid på oppsett, leting etter data og bestillinger.
+Med dataplattformen Saga ønsker vi å samle mest mulig relevant data og tilgjengeliggjøre disse på et standardisert og kompatibelt format. Dette gjør det enklere å utføre analyser og sammenstillinger uten å måtte bruke mye tid på oppsett, leting etter data og bestillinger.
 
 Dette er mulig gjennom bruk av moderne sky-teknologi i Google Cloud Platform (GCP). I tillegg kan en rekke verktøy og dokumentasjon legge til rette for at dataanalytikere, dataingeniører og andre fagdisipliner kan komme i gang med analyser på en smertefri måte.
 
