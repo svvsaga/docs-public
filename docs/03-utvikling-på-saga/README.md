@@ -9,8 +9,8 @@ Når nye teams skal i gang med utvikling på Saga er typisk det første som må 
 
 Ved opprettelse av GCP-prosjekter er det ganske mange ressurser som blir laget for dere:
 
-- Et delt GCP-prosjekt på formen `saga-<teamnavn>-shared-<suffix>`
-- For domenenet/problemområdet dere skal jobbe med blir det opprettet tre GCP-prosjekter, ett for hvert miljø (STM, ATM, PROD) på formen: `saga-<domene>-<miljø>-<suffix>`. Eksempel: `saga-nvdb-prod-vlmh`
+- Et delt GCP-prosjekt på formen `saga-<teamnavn>-shared[-<suffix>]`
+- For domenenet/problemområdet dere skal jobbe med blir det opprettet tre GCP-prosjekter, ett for hvert miljø (STM, ATM, PROD) på formen: `saga-<domene>-<miljø>[-<suffix>]`. Eksempel: `saga-nvdb-prod-vlmh`
 - For hvert av prosjektene over blir det opprettet et [budsjett](https://cloud.google.com/billing/docs/how-to/budgets) og en "vakthund" som sletter prosjektene dersom de bruker mer enn dobbelt av budsjettet. Hovedformålet med dette er å unngå en enorm kostnad dersom uvedkommende får tak i private nøkler og bruker disse til å lage ressurser.
   - Som standard har delte "shared"-prosjekt et budsjett på 300 USD per måned
   - Som standard har domeneprosjekter et budsjett på 1000 USD per måned
