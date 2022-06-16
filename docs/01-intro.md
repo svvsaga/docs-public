@@ -20,7 +20,7 @@ Med dataplattformen Saga ønsker vi å samle mest mulig relevant data og tilgjen
 
 Dette er mulig gjennom bruk av moderne sky-teknologi i Google Cloud Platform (GCP). I tillegg kan en rekke verktøy og dokumentasjon legge til rette for at dataanalytikere, dataingeniører og andre fagdisipliner kan komme i gang med analyser på en smertefri måte.
 
-![Visualisering av hva Saga ønsker å oppnå med ny plattform](/img/saga-goal.png)
+![Visualisering av hva Saga ønsker å oppnå med ny plattform](img/saga-goal.png)
 
 ## Når bør du velge Saga som analyseplattform?
 

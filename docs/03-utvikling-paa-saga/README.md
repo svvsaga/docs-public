@@ -1,4 +1,3 @@
-
 # Utvikling på Saga
 
 Disse sidene er hovedsaklig for utviklere som skal lage ingest- eller analysepipelines på Saga. Her vil vi gi informasjon som gjør det lettere for domeneteams o.l. å komme i gang med sitt arbeid.
@@ -19,7 +18,7 @@ Ved opprettelse av GCP-prosjekter er det ganske mange ressurser som blir laget f
 - Tilgangsgrupper:
   - Gruppen `saga-developers` finnes fra før, og teamets utviklere blir lagt til i denne. Det gir tilgang til å se de fleste Saga-prosjekter i alle miljøer (uten å kunne redigere de).
   - Gruppen `saga-<teamnavn>-developers` gir utviklere mulighet til å lage og slette alle ressurser i STM. Alle utviklere på et team blir lagt til i denne gruppen.
-  - Gruppen `saga-<teamnavn>-devops` gir utvalgte DevOps-utviklere mulighet til å lage og slette ressurser i ATM og PROD. 
+  - Gruppen `saga-<teamnavn>-devops` gir utvalgte DevOps-utviklere mulighet til å lage og slette ressurser i ATM og PROD.
   - En eller flere personer blir utnevnt til administrator av de to sistnevnte gruppene, og kan administrere dem på [Google Groups](https://groups.google.com).
 
 <!--- TODO: Kva er formålet med shared-prosjekt, og kva blir oppretta der --->
