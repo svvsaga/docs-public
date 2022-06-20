@@ -231,7 +231,7 @@ f.eks. `saga-stm-consumer-readers`. På prosjektnivå skal miljønavnet komme et
 Et eksempel på dette er `saga-oppetid-stm-readers`. Det blir tilsvarende for grupper som opprettes på datasonenivå. Se
 figuren under:
 
-![Eksempelhierarki for consumer readers i STM-miljøet](img/Grupper_per_miljø.png)
+![Eksempelhierarki for consumer readers i STM-miljøet](img/Grupper_per_miljo.png)
 
 ### IAM-bindings for datasett-grupper
 
