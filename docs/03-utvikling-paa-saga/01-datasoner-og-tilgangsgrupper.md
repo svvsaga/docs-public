@@ -38,7 +38,7 @@ dataeier. Dataeier har ansvar for at datasettet tilfredsstiller de føringer og 
   - Ustrukturerte data og strukturerte data som ikke har den strukturen vi ønsker på plattformen
 - Lagres så lenge som mulig eller så lenge det kan være behov for dataene slik at deriverte data kan regenereres, for
   eksempel i forbindelse med feil eller endringer som krever det
-- Eksempel: bilder, video, XML
+- Eksempel: bilder, video, XML, CSV, JSON
 - Foreslått lager: Google Cloud Storage
 
 ### Standardized
@@ -103,6 +103,7 @@ dashboard og lignande (i tillegg til internt på plattformen).
 
 - Det er ikke detaljert hvilken prosess man må gjennom for å registrere et datasett i `consumer`-sonen
 - For at datakatalogen skal plukke opp delte BigQuery-tabeller automatisk, må de ligge i et BQ Dataset med navn lik datasonen de tilhører. F.eks. vil veglenker fra NVDB ligge i datasone Standardized, slik at hele tabell-IDen inkludert prosjekt blir: `saga-nvdb-prod-vlmh.standardized.veglenker`.
+  - I tillegg må tabellen minst ha beskrevet et sett med metadata [som definert i vår Terraform-modul her](https://github.com/svvsaga/terraform-modules/tree/main/datacatalog_tags_dcat_egenskaper).
 
 ## Tilgangskontroll
 
