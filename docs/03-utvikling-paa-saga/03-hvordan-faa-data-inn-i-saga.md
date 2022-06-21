@@ -36,6 +36,8 @@ Her er et eksempel på en "pull"-pipeline som bruker Cloud Functions, GCS og Big
 1. Standardizeren streamer data til en tabell `internal.weather`
 1. Et view `standardized.weather` dedupliserer data fra `internal.weather` basert på et definert unikhetskriterie (f.eks. målestasjon og tidspunkt)
 
+Et annet eksempel finnes i ["saga-team-template"-repoet](https://github.com/svvsaga/saga-team-template), sammen med eksempler på bruk av Terraform for versjonert infrastruktur, og GitHub Actions for automatisk release og deploy.
+
 ### Push-pipelines
 
 Integrasjoner som henter data ved "pushing" kjennetegnes ved følgende:
