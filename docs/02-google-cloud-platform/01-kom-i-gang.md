@@ -16,10 +16,6 @@ Når du jobber i GCP skal du alltid ha valgt dette prosjektet. Dette kan du gjø
 
 ![Skjermbilde av valg av organisasjon i Google Cloud Platform](img/onboarding-1.png)
 
-Sørg for at det står vegvesen.no i «Select from ...» øverst i prosjektvelgeren.
-
-![Skjermbilde av Select from i prosjektvelgeren](img/onboarding-2.png)
-
 Velg så fanen «All». Klikk deretter på ditt prosjekt, som har et navn på formatet: «saga-< brukernavn>-playground-< suffix>». Du skal da kunne se navnet på ditt prosjekt øverst på siden.
 
-![Skjermbilde av valg av fanen "all".](img/onboarding-3.png)
+![Skjermbilde av valg av fanen "all".](img/onboarding-2.png)
