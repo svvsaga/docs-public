@@ -25,6 +25,12 @@ Vi har laget et mal-repo, [saga-team-template](https://github.com/svvsaga/saga-t
 
 Det anbefales å se på repoet for bruk av Terraform og Terragrunt, og gjerne prøv å sette opp pipelinen selv for ditt prosjekt.
 
+## Import av eksisterende infrastruktur til Terraform
+
+Det er mulig å importere enkeltressurser som har blitt opprettet utenfor Terraform. Dette gjøres ved å først skrive Terraform-koden som vanlig, deretter kjøre [`terraform import` eller `terragrunt import`](https://www.terraform.io/cli/import).
+
+Dersom man er usikker på hvordan Terraform-koden skal skrives, eller har et mer omfattende oppsett med mange ressurser man ønsker å få inn i Terraform, kan man benytte [`terraformer`](https://github.com/GoogleCloudPlatform/terraformer) fra Google: et CLI som lar deg spesifisere prosjekt og hvilke ressurstyper som skal importeres, og genererer Terraform-kode for disse.
+
 ## Alternativer til Terraform
 
 Terraform kan virke avskrekkende og av og til overkill. Når trenger man -ikke- Terraform?
