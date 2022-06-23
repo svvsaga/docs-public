@@ -37,7 +37,7 @@ Terraform kan virke avskrekkende og av og til overkill. Når trenger man -ikke- 
 
 - I en utforskingsperiode kan det være bedre å lage ressurser direkte i GCP Console. Dette har man tilganger til å gjøre i teamets egne STM-prosjekt, samt i ditt personlige utvikler-sandbox-prosjekt. Bare husk at disse må ryddes opp manuelt også.
 - Av og til har man behov for å opprette ressurser dynamisk/programmatisk, f.eks. en ingest-pipeline som lager nye midlertidige BigQuery-tabeller. I disse tilfellene gjøres endringene av Service Account'en som pipelinen bruker, og denne må ha fått tildelt tilganger til å opprette ressurser.
-- Ved andre behov, [kontakt plattformteamet Yggdrasil på Saga-Slacken](https://vegvesen.slack.com/archives/C03LGD7TM5Z).
+- Ved andre behov, [kontakt plattformteamet Yggdrasil på #saga-support](https://vegvesen.slack.com/archives/C03LGD7TM5Z).
 
 Dersom man ønsker å beskrive infrastruktur i et kjent kodespråk som TypeScript, Java eller Python, heller enn Terraforms deklarative HCL-syntaks, finnes det to muligheter for dette:
 

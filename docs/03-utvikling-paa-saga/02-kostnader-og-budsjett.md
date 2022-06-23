@@ -38,4 +38,4 @@ Når et prosjekt stenges ned vil det ikke lenger være mulig å benytte ressurse
 
 Prosjektet vil være tilgjengelig for gjenoppretting i 30 dager, men merk at **noen ressurser, som Storage Buckets og Pub/Sub, vil kunne slettes mye tidligere**. [Les mer om stengte prosjekter hos GCP](https://cloud.google.com/resource-manager/docs/creating-managing-projects#shutting_down_projects).
 
-For å få gjenopprettet stengte prosjekter, ta kontakt med Yggdrasil på #yggdrasil-kanalen i Saga-Slacken.
+For å få gjenopprettet stengte prosjekter, ta kontakt på [#saga-support](https://vegvesen.slack.com/archives/C03LGD7TM5Z).
