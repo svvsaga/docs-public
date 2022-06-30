@@ -15,7 +15,7 @@ Spesielt VMer kan fort bli kostbare:
 
 For at man ikke skal gå på en smell - enten pga. ukritisk bruk av ressurser, eller dersom uvedkommende skulle få tak i en privatnøkkel og spunnet opp mange nye ressurser - er alle GCP-prosjekter på Saga tilknyttet et budsjett.
 
-Budsjettet er som standard satt til **$1000 per prosjekt per måned**. Dersom budsjettet overskrides med 100%, dvs man har brukt $2000, blir prosjektet automatisk deaktivert.
+Budsjettet er som standard satt til **$1000 per prosjekt per måned**. Dersom budsjettet overskrides med 100%, det vil si at man har brukt over $2000, blir prosjektet automatisk deaktivert.
 
 ### Hvordan kan man se hvor mye penger man har brukt?
 
@@ -26,16 +26,18 @@ Budsjettet er som standard satt til **$1000 per prosjekt per måned**. Dersom bu
 
 Du kan også klikke deg inn på denne for å se detaljert kostnadsinformasjon.
 
-Det er p.t. dessverre ingen enkel måte å se selve budsjettet, eller få varslinger når man nærmer seg. Man bør derfor holde et øye med "Billing"-widgeten på dashboardet. Når det er sagt, bør $1000 være mer enn nok for de aller fleste prosjekter.
+Det er i dag dessverre ingen enkel måte å se selve budsjettet, eller å få varslinger når man nærmer seg. Man bør derfor holde et øye med "Billing"-widgeten på dashboardet. Når det er sagt, bør $1000 være mer enn nok for de aller fleste prosjekter.
 
-### Hva skjer når budsjettet er nådd? Hva betyr det at prosjektet blir deaktivert?
+### Hva skjer når budsjettet er nådd?
 
 Budsjetter i GCP har i utgangspunktet kun rapporteringsfunksjon; ingen funksjonalitet blir deaktivert direkte som følge av at et budsjett er nådd.
 
 Vi har derfor bygd en "Billing Watchdog": En Cloud Function som får kontinuerlig oppdatert budsjettinformasjon for alle prosjekter, og når et prosjekt når 200% av sitt budsjett, stenges det ned, og frakobles billing-accounten.
 
+### Hva betyr det at prosjektet blir deaktivert?
+
 Når et prosjekt stenges ned vil det ikke lenger være mulig å benytte ressurser i det prosjektet, eller opprette nye ressurser. Prosjektet vil også stå som "slettet" i GCP.
 
 Prosjektet vil være tilgjengelig for gjenoppretting i 30 dager, men merk at **noen ressurser, som Storage Buckets og Pub/Sub, vil kunne slettes mye tidligere**. [Les mer om stengte prosjekter hos GCP](https://cloud.google.com/resource-manager/docs/creating-managing-projects#shutting_down_projects).
 
-For å få gjenopprettet stengte prosjekter, ta kontakt på [#saga-support](https://vegvesen.slack.com/archives/C03LGD7TM5Z).
+For å få gjenopprettet stengte prosjekter, ta kontakt på [#saga-support på Slack](https://vegvesen.slack.com/archives/C03LGD7TM5Z).
