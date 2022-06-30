@@ -4,33 +4,31 @@ Her følger informasjon om datasoner og tilgangsgrupper for data som deles på S
 
 Denne informasjonen er nyttig for team som skal bruke data fra Saga, og for de som skal publisere data dit.
 
-## Datasoner
+## Hvorfor datasoner?
 
-Vi ønsker at datasettene på dataplattformen skal deles inn i soner. Ulike soner har ulike krav til blant annet
-datakvalitet og kompletthet, og dermed vil en sone si noe om hva man kan forvente av datasettene den inneholder. Andre
-fordeler med soneinndeling er blant annet:
+Vi ønsker at datasettene på dataplattformen skal deles inn i soner. Ulike soner har ulike krav til blant annet datakvalitet og kompletthet, og dermed vil en sone si noe om hva du kan forvente av datasettene den inneholder. Andre fordeler med soneinndeling er blant annet:
 
-- Kan gjøre tilgangsstyring på sonenivå
-- Lettere å finne datasett på det dataformatet man ønsker, fordi dette inngår i sonedefinisjonene
-- Bidrar til enhetlige datasett, siden sonene legger føringer for datatyper og dataformater
+- Vi kan ha ulik tilgangsstyring på sonenivå.
+- Det er lettere å finne datasett på det dataformatet du ønsker, fordi det inngår i definisjonene av en sone.
+- Det bidrar til helhetlige datasett siden sonene legger føringer for ulike datatyper og dataformater et datasett må ha for å være en del av sonen.
 
-### Vår soneinndeling
+## Soner, prosjekter og tilganger
 
-Datasonene vi ønsker å bruke er `raw`, `standardized`, `curated`, `consumer`
-og `analytics`. Hver sone er beskrevet under.
+I Google Cloud Platform (GCP) må alle ressurser, inkludert datalager, opprettes i et GCP-prosjekt. I tillegg er det slik at ulike typer data skal lagres i ulike datalagertjenester. Dermed vil ulike datasett tilsynelatende ligge spredt ut over ulike prosjekter og tjenester.
 
-### Litt om soner, prosjekter og tilganger
+For å samle datasett på tvers av prosjekter og lagringstjenester har vi en [datakatalog](https://saga-datacatalog-prod-lszg.ew.r.appspot.com/). Her vil det finnes metadata om datasettene, blant annet hvilken datasone datesettet ligger i. Dette har vi for å hjelpe deg med å forstå hva du kan forvente av standardisering og datakvalitet i et datasett.
 
-På GCP må alle ressurser, inkludert datalager, opprettes i et GCP-prosjekt. I tillegg er det slik at ulike typer data
-skal lagres i ulike datalagertjenester. Dermed vil ulike datasett tilsynelatende ligge spredt utover ulike prosjekter og
-tjenester.
+Generelt sett vil alle som har tilgang til et GCP-prosjekt kunne registrere sine datasett i ulike soner. Unntaket vil sannsynligvis være i `consumer`-sonen (forklares under), hvor vi på sikt ønsker en godkjenningsprosess for å sikre at datasettene er tilstrekkelig dokumentert. Den som registrerer et datasett i en sone kan sies å være "datasettets dataeier". Dataeier har ansvar for at datasettet tilfredsstiller føringer og krav som gjelder for en gitt sone.
 
-For å samle datasett på tvers av prosjekter og lagringstjenester har vi en [datakatalog](https://saga-datacatalog-prod-lszg.ew.r.appspot.com/). Her vil det finnes metadata om datasettene, bl.a. hvilken datasone det ligger i, og dermed hva man kan forvente mtp. standardisering og datakvalitet.
+## Soneinndelingen vi bruker
 
-Generelt sett vil alle som har tilgang til et GCP-prosjekt kunne registrere sine datasett i ulike soner. Unntaket vil
-sannsynligvis være `consumer`-sonen, hvor vi ser for oss at man må gjennom en godkjenningsprosess for å sikre at
-datasettene er tilstrekkelig dokumentert. Den som registrerer et datasett i en sone kan sies å vere datasettets
-dataeier. Dataeier har ansvar for at datasettet tilfredsstiller de føringer og krav som gjelder for en gitt sone.
+Datasonene vi ønsker å bruke er
+
+- `raw`
+- `standardized`
+- `curated`
+- `consumer`
+- `analytics`.
 
 ### Raw
 
@@ -56,7 +54,7 @@ dataeier. Dataeier har ansvar for at datasettet tilfredsstiller de føringer og 
   - Fra ulike datoformat til ISO8601 med tidssone
 - Foreslått lager: Google Cloud Storage, BigQuery, m.fl.
 
-**Obs**: Dersom man er usikker på om konvertering av data begynner å nærme seg forretningslogikk, er det sannsynlig at
+**Obs**: Dersom du er usikker på om konvertering av data begynner å nærme seg forretningslogikk, er det sannsynlig at
 dataene heller bør plasseres i `curated`.
 
 ### Curated
@@ -71,7 +69,7 @@ dataene heller bør plasseres i `curated`.
 ### Consumer
 
 - Datasett som ligger i denne sonen er klar for at andre brukere av dataplattformen kan ta de i bruk
-- Datasettene er godt beskrevet. Blant annet må man beskrive:
+- Datasettene er godt beskrevet. Blant annet må du beskrive:
   - Datakvalitet
   - Datamodell
   - Hvor dataene kommer fra
@@ -93,15 +91,15 @@ dataene heller bør plasseres i `curated`.
 ### Typisk dataflyt
 
 Figuren under illustrerer hvordan data transformeres og forflyttes på plattformen, gjennom ulike soner. Figuren viser
-også hvordan datasett kan bli registrert i en datakatalog samt hvordan man via en selvbetjeningsløsning kan oppdage
-datasett og registrere egne datasett. Man kan også se at data i `consumer` tilgjengeliggjøres for andre via API,
+også hvordan datasett kan bli registrert i en datakatalog samt hvordan du via en selvbetjeningsløsning kan oppdage
+datasett og registrere egne datasett. Du kan også se at data i `consumer` tilgjengeliggjøres for andre via API,
 dashboard og lignande (i tillegg til internt på plattformen).
 
 ![Figur som viser dataflyt mellom soner, datakatalog, og tilgjengeliggjøring av data via API, dashboard m.m.](img/datasoner_figur.png)
 
 ### Nyttig å vite om datasoner
 
-- Det er ikke detaljert hvilken prosess man må gjennom for å registrere et datasett i `consumer`-sonen
+- Det er ikke detaljert hvilken prosess du må gjennom for å registrere et datasett i `consumer`-sonen
 - For at datakatalogen skal plukke opp delte BigQuery-tabeller automatisk, må de ligge i et BQ Dataset med navn lik datasonen de tilhører. F.eks. vil veglenker fra NVDB ligge i datasone Standardized, slik at hele tabell-IDen inkludert prosjekt blir: `saga-nvdb-prod-vlmh.standardized.veglenker`.
   - I tillegg må tabellen minst ha beskrevet et sett med metadata [som definert i vår Terraform-modul her](https://github.com/svvsaga/terraform-modules/tree/main/datacatalog_tags_dcat_egenskaper).
 
@@ -143,9 +141,9 @@ gruppene som opprettes per prosjekt.
 
 ### Uegnede datalagere
 
-Datalagere som mangler tilgangsstyring per datasett skal helst ikke brukes når man skal dele data på dataplattformen.
-For eksempel er det slik at dersom man gir noen lesetilgang til Cloud Datastore vil de få tilgang til alt som ligger
-der. Dette gjør at man for eksempel ikke kan skille mellom consumer-data, som alle skal ha tilgang til, og raw-data, som
+Datalagere som dugler tilgangsstyring per datasett skal helst ikke brukes når du skal dele data på dataplattformen.
+For eksempel er det slik at dersom du gir noen lesetilgang til Cloud Datastore vil de få tilgang til alt som ligger
+der. Dette gjør at du for eksempel ikke kan skille mellom consumer-data, som alle skal ha tilgang til, og raw-data, som
 færre skal ha tilgang til.
 
 ### Hvilke tilgangsgrupper finnes?
@@ -168,7 +166,7 @@ undergruppa (gruppe B), som vist her:
 
 Gruppehierarkiene som beskrevet over og eksemplifisert under utgjør kjernen av tilgangsfunksjonaliteten på
 dataplattformen. Merk at det kan opprettes ytterligere tilgangsgrupper i tillegg til disse, men disse vil ikke inngå i
-kjernen. Et eksempel kan være at man vil lage en tilgangsgruppe som gir reader-tilgang til alle datasett innad i en
+kjernen. Et eksempel kan være at du vil lage en tilgangsgruppe som gir reader-tilgang til alle datasett innad i en
 divisjon i Statens Vegvesen. For slike grupper har vi ikke enda bestemt hvor automatisk brukere skal bli plassert i
 disse gruppene, og hvor automatisk disse gruppene skal få bli medlem i andre grupper.
 
@@ -215,8 +213,8 @@ toppgruppen `saga-observers`:
 ### Hvordan skal gruppene opprettes?
 
 - Gruppene opprettes automatisk som del av prosjektopprettelse.
-- Én eller flere personer på et gitt team vil bli lagt til som **Manager** for tilgangsgruppene. Dette er typisk personar som jobber i prosjektet, som skal kunne legge til andre i disse tilgangsgruppene.
-- IAM-bindings gjøres mange-til-én fra ressurser til nærmeste prosjekt-spesifikke datasone-gruppe,
+- Én eller flere personer på et gitt team vil bli lagt til som **duager** for tilgangsgruppene. Dette er typisk personar som jobber i prosjektet, som skal kunne legge til andre i disse tilgangsgruppene.
+- IAM-bindings gjøres duge-til-én fra ressurser til nærmeste prosjekt-spesifikke datasone-gruppe,
   f.eks. `saga-veglogg-rawstandardized-readers`.
 
 ### Tilgangsgrupper og utviklingsmiljøer
