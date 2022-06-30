@@ -1,12 +1,14 @@
 # Hvordan få data inn i Saga
 
-Som domeneteam på Saga er man avhengig av data. Mange datasett er allerede tilgjengelige i [datakatalogen](https://saga-datacatalog-prod-lszg.ew.r.appspot.com/), men ofte vil man ha behov for å hente inn nye datakilder.
+Mange datasett er allerede tilgjengelige i [datakatalogen vår](https://saga-datacatalog-prod-lszg.ew.r.appspot.com/), men ofte vil man ha behov for å hente inn nye datakilder.
 
-Når data skal deles i datakatalogen, eller benyttes som del av et foredlet dataprodukt, bør man lage en automatisk ingest-pipeline. For at denne skal kunne bygges og vedlikeholdes på en robust og effektiv måte, er det en del prinsipper som bør følges:
+Når data skal deles i datakatalogen, eller benyttes som del av et foredlet dataprodukt, bør man lage en _automatisk ingest-pipeline_. For at denne skal kunne bygges og vedlikeholdes på en robust og effektiv måte, er det en del prinsipper som bør følges:
 
-1. **Gjenproduserbar infrastruktur** - Alle ressurser som benyttes i GCP bør provisjoneres på en reproduserbar og versjonert metode, slik at man kan være sikker på at samme infrastruktur kjører i ulike miljøer, samt kunne sette opp infrastruktur på nytt dersom det skulle være nødvendig. I praksis betyr dette at ressurser defineres i Terraform, sjekkes inn i kode og deployes via CI/CD (f.eks. GitHub Actions).
-1. **Keep it simple** - Lag den enkleste arkitekturen som oppfyller kravene til ingest. I mange tilfeller betyr dette en eller flere Cloud Functions, men kan også være enkle [scheduled queries](https://cloud.google.com/bigquery/docs/scheduling-queries), eller data-verktøy som [DBT](https://www.getdbt.com/). I mer avanserte scenarier kan orkestreringstjenester som [Dataflow](https://cloud.google.com/dataflow) være nødvendig, men bør ikke være førstevalg for enhver løsning, pga økt kompleksitet og kostnad.
-1. **Idempotens og deduplisering** - I GCP kan det skje at functions feiler og blir retryet; det er derfor viktig at enhver pipeline er laget slik at gjentatte kjøringer ikke fører til inkonsistente data. For eksempel kan man ha ulike BigQuery-tabeller for "landing" og visning av data, der den førstnevnte kan inneholde duplikater, mens den endelige tabellen kun viser deduplisert data, f.eks. ved å definere et view, eller en merge query fra landings-tabellen.
+1. **Gjenproduserbar infrastruktur** – Alle ressurser som benyttes i GCP bør provisjoneres på en reproduserbar og versjonert metode, slik at man kan være sikker på at samme infrastruktur kjører i ulike miljøer, samt kunne sette opp infrastruktur på nytt dersom det skulle være nødvendig. I praksis betyr dette at ressurser defineres i Terraform, sjekkes inn i kode og deployes via CI/CD (for eksempel GitHub Actions).
+
+1. **Keep it simple** - Lag den enkleste arkitekturen som oppfyller kravene til ingest. I mange tilfeller betyr dette en eller flere Cloud Functions, men kan også være enkle [scheduled queries](https://cloud.google.com/bigquery/docs/scheduling-queries), eller data-verktøy som [DBT](https://www.getdbt.com/). I mer avanserte scenarier kan orkestreringstjenester som [Dataflow](https://cloud.google.com/dataflow) være nødvendig, men bør ikke være førstevalg for enhver løsning, på grunn av økt kompleksitet og kostnad.
+
+1. **Idempotens og deduplisering** - I GCP kan det skje at functions feiler og blir "retryet"; det er derfor viktig at enhver pipeline er laget slik at gjentatte kjøringer ikke fører til inkonsistente data. For eksempel kan man ha ulike BigQuery-tabeller for "landing" og visning av data, der den førstnevnte kan inneholde duplikater, mens den endelige tabellen kun viser deduplisert data, for eksempel ved å definere et view, eller en merge query fra landings-tabellen.
 
 ## Pipeline-arkitekturer
 
