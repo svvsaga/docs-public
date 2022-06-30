@@ -1,16 +1,16 @@
 ---
-title: Google Cloud Platform
+title: Kom i gang
 ---
 
-# Google Cloud Platform
+# Kom i gang
 
-[Google Cloud Platform (GCP)](https://cloud.google.com/) er Google sin skyplattform, og er tilsvarende Azure hos Microsoft eller AWS fra Amazon.
+Statens vegvesen har valgt [Google Cloud Platform (GCP)](https://cloud.google.com/) som skyplattform for Saga. Dette er Google sin skyplattform, og er tilsvarende Azure hos Microsoft eller AWS fra Amazon.
 
-Statens vegvesen har valgt GCP som skyplattform for Saga fordi plattformen tilbyr svært gode muligheter for innsamling, prosessering, sammenstilling og analyse av data fra ulike kilder, og er relativt brukervennlig.
+Valget ble tatt fordi plattformen tilbyr svært gode muligheter for innsamling, prosessering, sammenstilling og analyse av data fra ulike kilder, og er relativt brukervennlig.
 
-## Struktur i GCP
+## Struktur i Google Cloud Platform
 
-Du bruker og administrerer vanligvis GCP i nettleseren, og du må ha konto i GCP for å få tilgang. [Mer om tilganger finner du i "Kom i gang"](google-cloud-platform/kom-i-gang).
+Du bruker og administrerer vanligvis GCP i nettleseren, og du må ha konto i GCP for å få tilgang. [Mer om tilganger finner du i "Starte med Google Cloud"](google-cloud-platform/starte-med-google-cloud).
 
 Det finnes tre administrasjonsnivåer i GCP: **Organization, Folder** og **Project**.
 
@@ -29,7 +29,7 @@ Det finnes tre administrasjonsnivåer i GCP: **Organization, Folder** og **Proje
 
 Se gjerne [Googles egen dokumentasjon for mer informasjon.](https://cloud.google.com/docs/overview)
 
-## IAM
+## Identity and Access Management
 
 **Identity and Access Management (IAM)** er tilgangsstyringen i GCP. For å gjøre noe som helst i GCP må du ha fått tildelt riktige tilganger. Tilganger består av to konsepter: **roles** og **permissions.**
 
