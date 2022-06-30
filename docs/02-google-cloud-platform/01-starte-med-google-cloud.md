@@ -1,8 +1,8 @@
-# Kom i gang
+# Starte med Google Cloud
 
 Før du kan begynne å utforske datasettene må du logge inn i GCP og velge ditt personlige prosjekt. Dersom du har gjort dette tidligere kan du hoppe over stegene under.
 
-## Innlogging
+## Tilgang og innlogging
 
 Først skal du logge inn i Google Cloud Platform (GCP). Gå til https://console.cloud.google.com og logg inn med din SVV-bruker. Dersom du fra før har logget inn med en personlig google-bruker bør du bruke en annen nettleser eller lage en egen profil for dette. [Her kan du lese om hvordan egne profiler opprettes for Edge.](https://support.microsoft.com/en-us/topic/sign-in-and-create-multiple-profiles-in-microsoft-edge-df94e622-2061-49ae-ad1d-6f0e43ce6435)
 
