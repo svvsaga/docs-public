@@ -1,6 +1,6 @@
 # Datasoner
 
-Her følger informasjon om datasoner og tilgangsgrupper for data som deles på Saga.
+Her følger informasjon om datasoner for data som deles på Saga.
 
 Denne informasjonen er nyttig for team som skal bruke data fra Saga, og for de som skal publisere data dit.
 
