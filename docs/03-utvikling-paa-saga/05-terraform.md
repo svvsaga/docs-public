@@ -1,5 +1,7 @@
 # Terraform
 
+## Hva er Terraform?
+
 Å sette opp infrastruktur manuelt i GCP er tidkrevende og vanskelig å reprodusere, spesielt på tvers av flere miljøer. For å automatisere oppsett av infrastruktur bruker vi derfor [Terraform fra HashiCorp](https://www.terraform.io/), et verktøy for "Infrastructure as Code". Alle ressurser blir definert i Terraform-filer (.tf), sjekkes inn i Git, og kan parameteriseres med ulike variabler per miljø.
 
 Terraform brukes av Google selv, og det finnes mange gode ressurser for å lære seg Terraform:
@@ -13,7 +15,7 @@ Fordeler med Terraform:
 
 - Infrastruktur blir reprodusertbart på tvers av miljøer
 - Man får bedre oversikt over hvilke endringer som utføres på infrastruktur
-- Man kan ta i bruk ferdige moduler for sett med ressurser som ofte hører sammen, eller som alltid konfigureres på et gitt vis. Se f.eks. [repoet 'terraform-modules' (krever innlogging)](https://github.com/svvsaga/terraform-modules).
+- Man kan ta i bruk ferdige moduler for sett med ressurser som ofte hører sammen, eller som alltid konfigureres på et gitt vis. Se for eksempel [repoet 'terraform-modules' (krever innlogging)](https://github.com/svvsaga/terraform-modules).
 
 ## Terragrunt
 
@@ -33,11 +35,11 @@ Dersom man er usikker på hvordan Terraform-koden skal skrives, eller har et mer
 
 ## Alternativer til Terraform
 
-Terraform kan virke avskrekkende og av og til overkill. Når trenger man -ikke- Terraform?
+Terraform kan virke avskrekkende og av og til overkill. Når trenger man _ikke_ Terraform?
 
 - I en utforskingsperiode kan det være bedre å lage ressurser direkte i GCP Console. Dette har man tilganger til å gjøre i teamets egne STM-prosjekt, samt i ditt personlige utvikler-sandbox-prosjekt. Bare husk at disse må ryddes opp manuelt også.
-- Av og til har man behov for å opprette ressurser dynamisk/programmatisk, f.eks. en ingest-pipeline som lager nye midlertidige BigQuery-tabeller. I disse tilfellene gjøres endringene av Service Account'en som pipelinen bruker, og denne må ha fått tildelt tilganger til å opprette ressurser.
-- Ved andre behov, [kontakt plattformteamet Yggdrasil på #saga-support](https://vegvesen.slack.com/archives/C03LGD7TM5Z).
+- Av og til har man behov for å opprette ressurser dynamisk/programmatisk, for eksempel. en ingest-pipeline som lager nye midlertidige BigQuery-tabeller. I disse tilfellene gjøres endringene av Service Account'en som pipelinen bruker, og denne må ha fått tildelt tilganger til å opprette ressurser.
+- Ved andre behov, [kontakt plattformteamet Yggdrasil på Slack: #saga-support](https://vegvesen.slack.com/archives/C03LGD7TM5Z).
 
 Dersom man ønsker å beskrive infrastruktur i et kjent kodespråk som TypeScript, Java eller Python, heller enn Terraforms deklarative HCL-syntaks, finnes det to muligheter for dette:
 
