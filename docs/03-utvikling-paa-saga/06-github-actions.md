@@ -2,7 +2,7 @@
 
 Dersom man benytter GitHub for kildekontroll kan man også bruke [GitHub Actions](https://docs.github.com/en/actions) for automatiserte oppgaver, som release og deploy, kjøring av tester og linting.
 
-For å få en oversikt over konsepter som Workflows, Events, Jobs og Actions, [se dokumentasjonen](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions).
+For å få en oversikt over konsepter som Workflows, Events, Jobs og Actions, [se dokumentasjonen til GitHub](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions).
 
 Vi har laget et repo [github-actions-public](https://github.com/svvsaga/github-actions-public) med mange nyttige workflows og actions, f.eks.:
 
@@ -45,7 +45,7 @@ Mange av våre GitHub Actions og Workflows forutsetter at man har lagt inn en `p
 }
 ```
 
-Disse benyttes bl.a. til å gjøre autentisering med GCP, via [Workload Identity Federation](https://cloud.google.com/iam/docs/workload-identity-federation), som er et sikrere alternativ til langtlevende Service Account Keys.
+Disse benyttes blant annet til å gjøre autentisering med GCP, via [Workload Identity Federation](https://cloud.google.com/iam/docs/workload-identity-federation), som er et sikrere alternativ til langtlevende Service Account Keys.
 
 For å generere disse filene automatisk, sørg for at du er inlogget i `gcloud`, og deretter kjør:
 
@@ -178,4 +178,4 @@ Det er også mulig å benytte verktøy som [GitHub Deploy Center](https://github
 
 ![GitHub Deploy Center](img/github-deploy-center.png)
 
-Her kan du sette opp deployment per miljø av flere ulike applikasjoner, samt se hvilke versjoner som er deployet i hvilke miljø. Les mer på https://github.com/geirsagberg/github-deploy-center, eller ta kontakt med [#saga-support](https://vegvesen.slack.com/archives/C03LGD7TM5Z) for mer informasjon.
+Her kan du sette opp deployment per miljø av flere ulike applikasjoner, samt se hvilke versjoner som er deployet i hvilke miljø. Les mer på https://github.com/geirsagberg/github-deploy-center, eller ta kontakt med [#saga-support på Slack](https://vegvesen.slack.com/archives/C03LGD7TM5Z) for mer informasjon.
