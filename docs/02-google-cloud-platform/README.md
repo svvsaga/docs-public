@@ -55,7 +55,7 @@ Det er også gode muligheter for å [importere data rett fra en GCS-bøtte til B
 
 BigQuery er Google sin SQL-kompatible, kolonne-baserte database som håndterer datamengder på petabyte-nivå.
 
-[Les mer om bruk av BigQuery til analyseformål](https://www.notion.so/Analyse-av-store-datamengder-i-BigQuery-ca9b88f9084d4339b31c108abc06eb28).
+[Les mer om bruk av BigQuery til analyseformål](https://svvsaga.github.io/docs-public/bigquery).
 
 ### Google Colab
 
