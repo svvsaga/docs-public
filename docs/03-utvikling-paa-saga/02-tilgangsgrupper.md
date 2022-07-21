@@ -1,17 +1,17 @@
 # Tilgang til data
 
-Ulik data har behov for ulike nivåer av tilgjengelighet på grunn av innholdet i dataen. Derfor har vi tilgangskontroll, som styrer tilgang til data gjennom kombinasjonen av _identity-role-resource_. Ergo: Hvem (_identity_) har hvilken tilgang (_role_) til hvilken ressurs (_resource_).
+Ulik data har behov for ulike nivåer av tilgjengelighet på grunn av innholdet i dataene. Derfor har vi tilgangskontroll, som styrer tilgang til data gjennom kombinasjonen av _identity-role-resource_. Altså: Hvem (_identity_) har hvilken tilgang (_role_) til hvilken ressurs (_resource_).
 
 ## Type tilgang på dataplattformen
 
-Vi bruker et gruppehierarki for å styre brukeres tilgang til ulike datasoner på dataplattformen. Dette gjør det enkelt å gi personer eller "service accounts" tilgang til en eller flere datasoner ved å legge de til i gitte tilgangsgrupper fremfor å lage IAM-bindings (Identity and Access Management-koblinger) for enkeltpersoner.
+Vi bruker et gruppehierarki for å styre brukernes tilgang til ulike datasoner på dataplattformen. Dette gjør det enkelt å gi personer eller "service accounts" tilgang til en eller flere datasoner ved å legge de til i gitte tilgangsgrupper fremfor å lage IAM-bindings (Identity and Access Management-koblinger) for enkeltpersoner.
 
 I hovedsak trenger vi to typer grupper:
 
 - reader
 - observer
 
-En _reader_-gruppe er en gruppe som brukes for å få lesetilgang til en eller flere datasoner. En _observer_-gruppe gir på sin side bare tilgang til å få vite at datasett i en datasone eksisterer, og lese eventuelle metadata om datasettene.
+En _reader_-gruppe brukes for å få lesetilgang til en eller flere datasoner. En _observer_-gruppe gir bare tilgang til å få vite hvilke datasett som eksisterer, og lese metadata om disse.
 
 Disse gruppene skal gi følgende tilganger:
 
@@ -91,14 +91,6 @@ Gruppene opprettes automatisk som del av prosjektopprettelse. Én eller flere pe
 
 Datalagere som dugler tilgangsstyring per datasett skal helst ikke brukes når du skal dele data på dataplattformen. For eksempel er det slik at dersom du gir noen lesetilgang til Cloud Datastore vil de få tilgang til alt som ligger der. Dette gjør at du for eksempel ikke kan skille mellom `consumer`-data, som alle skal ha tilgang til, og `raw`-data, som færre skal ha tilgang til.
 
-### Tilgangsgrupper og utviklingsmiljøer
-
-I dag blir GCP-prosjekter, og dermed også datasett, opprettet i tre ulike miljø: STM, ATM, og PROD. I starten av arbeidet med tilgangsgrupper ønsker vi å speile tilgangsgruppene i alle tre miljøer - hovedsaklig slik at vi kan teste opprettelsen av gruppene før det går i prod. I fremtiden kan det hende at vi går vekk fra dette og dermed bare har tilgangsgruppene i prod.
-
-Miljønavnet skal være en del av gruppenavnene i STM og ATM. I prod skal miljønavnet ikke være med. Dermed viser eksemplene over gruppenavnene slik de vil være i prod. På toppnivå skal miljønavnet komme etter prefikset, for eksempel `saga-stm-consumer-readers`. På prosjektnivå skal miljønavnet komme etter prosjektnavnet, per vår navnestandard. Et eksempel på dette er `saga-oppetid-stm-readers`. Det blir tilsvarende for grupper som opprettes på datasonenivå. Se figuren under:
-
-![Eksempelhierarki for consumer readers i STM-miljøet](img/Grupper_per_miljo.png)
-
 ### IAM-bindings for datasett-grupper
 
 Siden selve tilgangsstyringen mot ressurser gjøres på datasone-nivå, er det en del IAM-bindings som må på plass for at brukere skal kunne finne fram til prosjekt-ressursene de har tilgang til. Dette varierer også noe basert på hva slags ressurs det er snakk om.
@@ -125,21 +117,13 @@ Figurene over viser konkrete eksempler på hvordan gruppenavnene skal se ut. Mer
 
 Reader-grupper: `saga-<datasone>-readers`
 
-- For STM og ATM: `saga-<miljø>-<datasone>-readers`
-
 Observer-gruppe: `saga-observers`
-
-- For STM og ATM: `saga-<miljø>-observers`
 
 #### På prosjektnivå
 
 Reader-grupper: `saga-<prosjekt>-<datasone>-readers`
 
-- For STM og ATM: `saga-<prosjekt>-<miljø>-<datasone>-readers`
-
 Observer-gruppe: `saga-<prosjekt>-observers`
-
-- For STM og ATM: `saga-<prosjekt>-<miljø>-observers`
 
 ## Direkte tilgang til ressurser
 
