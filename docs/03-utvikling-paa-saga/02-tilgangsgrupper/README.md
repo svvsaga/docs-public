@@ -10,14 +10,14 @@ En tilgangsadministrator kan gi tilgang til andre via [Google Groups](https://gr
 
 ## Type tilgang på dataplattformen
 
-Vi bruker et gruppehierarki for å styre brukernes tilgang til ulike datasoner på dataplattformen. Dette gjør det enkelt å gi personer eller "service accounts" tilgang til en eller flere datasoner.
+Vi bruker et gruppehierarki for å styre brukernes tilgang til ulike prosjekter og datasoner på dataplattformen. Dette gjør det enkelt å gi personer eller "service accounts" tilgang til en eller flere prosjekter eller datasoner.
 
 I hovedsak trenger vi to typer grupper:
 
 - reader
 - observer
 
-En _reader_-gruppe brukes for å få lesetilgang til en eller flere datasoner. En _observer_-gruppe gir bare tilgang til å få vite hvilke datasett som eksisterer, og lese metadata om disse.
+En _reader_-gruppe brukes for å få lesetilgang til en eller flere prosjekter eller datasoner. En _observer_-gruppe gir bare tilgang til å få vite hvilke datasett som eksisterer, og lese metadata om disse.
 
 For å se hvilke GCP-roller en gruppe har, [se denne siden](01-detaljert.md).
 
