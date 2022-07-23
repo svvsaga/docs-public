@@ -1,0 +1,144 @@
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="571px" height="381px" viewBox="-0.5 -0.5 571 381" content="&lt;mxfile&gt;&lt;diagram id=&quot;FopKS9BLKjXPbhhURmiE&quot; name=&quot;Page-1&quot;&gt;5VhNc5swEP01Prazkgw4x8b56KUzncmhZ8WSgVZGjBDG7q+vAMmACU6YGMeT+uBBj9XHvre7WntGlpvdo6Jp9EMyLmYY2G5G7mYYLzxivktgb4F5UAOhilkNoQZ4iv9yC4JF85jxrGOopRQ6TrvgSiYJX+kORpWSRddsLUV315SGvAc8rajoo79ipiOLIv+mefGdx2Fkt15g69+GOmPrSRZRJosWRO5nZKmk1PXTZrfkouTO8VLPexh4eziY4ol+ywRiZ2R675zjzPhqh1LpSIYyoeK+QW+VzBPGyxXAjH7nm9TZJzIpDSK9EWaEzGOmlfzDl1JIZRDG1zQX5mS3iWytWFk2e1mg74s7rMzVyp4WW/mpCrm1ssFV+tGaZv1/5HLDtdobA8UF1fG2qym1oREe7OzUb0rRfcsglXGis9bKP0vAGNggx17w1avXtFEe4K4URxPQomuO5ou2vXmoj+BGLV8aqJJ3QGr8+aR2Zh+sNUF4nNZkYq0tVVsqcutyRkP6RXHKuMp6cdBVuYhizZ9SWvFemALelXlQqy1Xmu9OyuByA1v3i1b1dCUxahVOH4aVapF1kgs075FxMhG4eJbFuXOgF/HVLua5JC1elfALefKmtCD9tEDXUQJRrwS6IjSUF05va07gvGmBbj698t5VKI97BfE15Q+93UTSk5crokxTrmM2WBlfqYXdAFnHQrgAmGHiA71BQYnLRLfwdfXphYx5g+8CH+A8NRbhoyvG5dZFau5rdNMi0zRhVDHT3E9DP4AHfD2GfgB0d7t8J/0ufvEl6fZO073KFdUT0exTgPUomkkAsHwvzYcr5qhsXJJ2/Mk7i8Nv63bHfR2tBRndWpCJewvs/4fBcB3dxnx0t+FN3G0cCtlRQU627Hmiy25Bq85hxGXnBefqNchH9hpDrV3N9QUaDbYACMgY7r95APNzcQ8feQMONB4V91N2HRQDmM1HcO4/AJwr3ucX7DrMsPk7uC5FzX/q5P4f&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs/>
+    <g>
+        <path d="M 257.5 60 L 257.5 72 L 185 148 L 185 153.63" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 185 158.88 L 181.5 151.88 L 185 153.63 L 188.5 151.88 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 312.5 60 L 312.5 72 L 385 148 L 385 153.63" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 385 158.88 L 381.5 151.88 L 385 153.63 L 388.5 151.88 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
+        <rect x="225" y="0" width="120" height="60" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 30px; margin-left: 226px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                saga-readers
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="285" y="34" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    saga-readers
+                </text>
+            </switch>
+        </g>
+        <path d="M 157.5 220 L 157.5 232 L 60 308 L 60 313.63" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 60 318.88 L 56.5 311.88 L 60 313.63 L 63.5 311.88 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 212.5 220 L 212.5 232 L 210 308 L 210 313.63" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 210 318.88 L 206.5 311.88 L 210 313.63 L 213.5 311.88 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
+        <rect x="125" y="160" width="120" height="60" fill="#60a917" stroke="#2d7600" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 190px; margin-left: 126px;">
+                        <div data-drawio-colors="color: #ffffff; " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(255, 255, 255); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                saga-oppetid-readers
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="185" y="194" fill="#ffffff" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    saga-oppetid-readers
+                </text>
+            </switch>
+        </g>
+        <rect x="0" y="320" width="120" height="60" fill="#0050ef" stroke="#001dbc" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 350px; margin-left: 1px;">
+                        <div data-drawio-colors="color: #ffffff; " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(255, 255, 255); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                saga-oppetid-rawstandardized-readers
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="60" y="354" fill="#ffffff" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    saga-oppetid-rawstan...
+                </text>
+            </switch>
+        </g>
+        <rect x="150" y="320" width="120" height="60" fill="#6a00ff" stroke="#3700cc" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 350px; margin-left: 151px;">
+                        <div data-drawio-colors="color: #ffffff; " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(255, 255, 255); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                saga-oppetid-curated-readers
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="210" y="354" fill="#ffffff" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    saga-oppetid-curated...
+                </text>
+            </switch>
+        </g>
+        <path d="M 357.5 220 L 357.5 232 L 360 308 L 360 313.63" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 360 318.88 L 356.5 311.88 L 360 313.63 L 363.5 311.88 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 412.5 220 L 412.5 232 L 510 308 L 510 313.63" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 510 318.88 L 506.5 311.88 L 510 313.63 L 513.5 311.88 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
+        <rect x="325" y="160" width="120" height="60" fill="#008a00" stroke="#005700" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 190px; margin-left: 326px;">
+                        <div data-drawio-colors="color: #ffffff; " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(255, 255, 255); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                saga-nvdb-readers
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="385" y="194" fill="#ffffff" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    saga-nvdb-readers
+                </text>
+            </switch>
+        </g>
+        <rect x="300" y="320" width="120" height="60" fill="#d80073" stroke="#a50040" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 350px; margin-left: 301px;">
+                        <div data-drawio-colors="color: #ffffff; " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(255, 255, 255); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                saga-nvdb-rawstandardized-readers
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="360" y="354" fill="#ffffff" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    saga-nvdb-rawstandar...
+                </text>
+            </switch>
+        </g>
+        <rect x="450" y="320" width="120" height="60" fill="#a20025" stroke="#6f0000" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 350px; margin-left: 451px;">
+                        <div data-drawio-colors="color: #ffffff; " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(255, 255, 255); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                saga-nvdb-curated-readers
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="510" y="354" fill="#ffffff" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    saga-nvdb-curated-re...
+                </text>
+            </switch>
+        </g>
+    </g>
+    <switch>
+        <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>
+        <a transform="translate(0,-5)" xlink:href="https://www.diagrams.net/doc/faq/svg-export-text-problems" target="_blank">
+            <text text-anchor="middle" font-size="10px" x="50%" y="100%">
+                Viewer does not support full SVG 1.1
+            </text>
+        </a>
+    </switch>
+</svg>

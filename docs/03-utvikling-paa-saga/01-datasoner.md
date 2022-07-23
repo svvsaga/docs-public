@@ -28,7 +28,7 @@ Datasonene vi ønsker å bruke er
 - `standardized`
 - `curated`
 - `consumer`
-- `analytics`.
+- `analytics`
 
 ### Raw
 
