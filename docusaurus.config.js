@@ -51,7 +51,7 @@ const config = {
             label: 'Dokumentasjon',
           },
           {
-            href: 'https://saga-datacatalog-prod-lszg.ew.r.appspot.com/',
+            href: 'https://data.saga.vegvesen.no/',
             position: 'right',
             label: 'Datakatalog',
           },

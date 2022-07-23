@@ -1,6 +1,6 @@
 # Hvordan få data inn i Saga
 
-Mange datasett er allerede tilgjengelige i [datakatalogen vår](https://saga-datacatalog-prod-lszg.ew.r.appspot.com/), men ofte vil man ha behov for å hente inn nye datakilder.
+Mange datasett er allerede tilgjengelige i [datakatalogen vår](https://data.saga.vegvesen.no/), men ofte vil man ha behov for å hente inn nye datakilder.
 
 Når data skal deles i datakatalogen, eller benyttes som del av et foredlet dataprodukt, bør man lage en _automatisk ingest-pipeline_. For at denne skal kunne bygges og vedlikeholdes på en robust og effektiv måte, er det en del prinsipper som bør følges:
 
