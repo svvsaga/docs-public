@@ -50,7 +50,7 @@ Denne figuren viser tilsvarende koblinger på datasone-nivå. Fargene brukes for
 
 ### Uegnede datalagere
 
-Datalagere som dugler tilgangsstyring per datasett skal helst ikke brukes når du skal dele data på dataplattformen. For eksempel er det slik at dersom du gir noen lesetilgang til Cloud Datastore vil de få tilgang til alt som ligger der. Dette gjør at du for eksempel ikke kan skille mellom data som alle skal ha tilgang til, og data som færre skal ha tilgang til.
+Datalagere som mangler tilgangsstyring per datasett skal helst ikke brukes når du skal dele data på dataplattformen. For eksempel er det slik at dersom du gir noen lesetilgang til Cloud Datastore vil de få tilgang til alt som ligger der. Dette gjør at du for eksempel ikke kan skille mellom data som alle skal ha tilgang til, og data som færre skal ha tilgang til.
 
 ## Direkte tilgang til ressurser
 
