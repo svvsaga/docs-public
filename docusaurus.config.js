@@ -8,23 +8,22 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 const config = {
   title: 'Saga',
   tagline: 'Dataplattformen til Statens vegvesen',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://svvsaga.github.io',
   baseUrl: '/docs-public/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'svvsaga', // Usually your GitHub org/user name.
-  projectName: 'docs-public', // Usually your repo name.
+  organizationName: 'svvsaga',
+  projectName: 'docs-public',
   trailingSlash: false,
   presets: [
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      {
         docs: {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
           editUrl: ({ versionDocsDirPath, docPath }) =>
             `https://github.com/svvsaga/docs-public/edit/main/${versionDocsDirPath}/${docPath}`,
         },
@@ -32,7 +31,11 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-      }),
+        gtag: {
+          trackingID: 'G-WZTM4JRGRL',
+          anonymizeIP: true,
+        },
+      },
     ],
   ],
   themeConfig:
