@@ -20,7 +20,7 @@ Når du får opprettet et GCP-prosjekt, er det flere ressurser som blir laget kl
   - Standarden for domeneprosjekter er budsjett på 1000 USD per måned
 - Hver utvikler får et "Sandbox"-prosjekt. Det er et prosjekt som utvikleren selv bestemmer over, som eksempelvis kan brukes til å teste ut nye GCP-tjenester før de tas i bruk i domene-prosjekter. Disse prosjektene har formen `saga-<kortversjon av utviklerens navn>-sandbox-<suffix>`. Eksempel: `saga-pedlan-sandbox-a1b2`
   - Disse prosjektene har et budsjett på 500 USD per måned. Det er likevel ønskelig at hver utvikler passer på å rydde og stoppe ressurser som ikke er i bruk.
-- Se ["Kostnader og budsjett"-siden](03-kostnader-og-budsjett#Varslinger) for mer informasjon.
+- Se ["Kostnader og budsjett"-siden](./utvikling-paa-saga/kostnader-og-budsjett).
 
 ### Varslinger
 
