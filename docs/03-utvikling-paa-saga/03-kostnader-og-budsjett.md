@@ -26,7 +26,14 @@ Budsjettet er som standard satt til **$1000 per prosjekt per måned**. Dersom bu
 
 Du kan også klikke deg inn på denne for å se detaljert kostnadsinformasjon.
 
-Det er i dag dessverre ingen enkel måte å se selve budsjettet, eller å få varslinger når man nærmer seg. Man bør derfor holde et øye med "Billing"-widgeten på dashboardet. Når det er sagt, bør $1000 være mer enn nok for de aller fleste prosjekter.
+#### Varslinger
+
+Når man har nådd enkelte terskler for budsjettbruk (50%, 70% og 100%) vil man få beskjed om dette:
+
+- Personlige prosjekter for utviklere og datavitere vil gi varsel til den enkeltes e-postadresse.
+- Team-eide prosjekter vil få sendt en mail til deres `#[team]-alerts` Slack-kanal på Saga-slacken.
+
+I tillegg kan man holde et øye med "Billing"-widgeten på dashboardet.
 
 ### Hva skjer når budsjettet er nådd?
 

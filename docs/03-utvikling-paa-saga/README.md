@@ -10,7 +10,7 @@ Når du får opprettet et GCP-prosjekt, er det flere ressurser som blir laget kl
 
 ### Prosjekter
 
-- Et delt GCP-prosjekt med formatet `saga-<teamnavn>-shared[-<suffix>]`
+- Et delt GCP-prosjekt med formatet `saga-<teamnavn>-shared`
 - For domenenet/problemområdet du skal jobbe med blir det opprettet tre GCP-prosjekter, ett for hvert miljø (STM, ATM, PROD), på formen: `saga-<domene>-<miljø>[-<suffix>]`. Eksempel: `saga-nvdb-prod-vlmh`
 
 ### Budsjetter i prosjektene
@@ -19,8 +19,12 @@ Når du får opprettet et GCP-prosjekt, er det flere ressurser som blir laget kl
   - Standarden er at delte "shared"-prosjekter har budsjett på 300 USD per måned
   - Standarden for domeneprosjekter er budsjett på 1000 USD per måned
 - Hver utvikler får et "Sandbox"-prosjekt. Det er et prosjekt som utvikleren selv bestemmer over, som eksempelvis kan brukes til å teste ut nye GCP-tjenester før de tas i bruk i domene-prosjekter. Disse prosjektene har formen `saga-<kortversjon av utviklerens navn>-sandbox-<suffix>`. Eksempel: `saga-pedlan-sandbox-a1b2`
-
   - Disse prosjektene har et budsjett på 500 USD per måned. Det er likevel ønskelig at hver utvikler passer på å rydde og stoppe ressurser som ikke er i bruk.
+- Se ["Kostnader og budsjett"-siden](03-kostnader-og-budsjett#Varslinger) for mer informasjon.
+
+### Varslinger
+
+Hvert team får opprettet en egen Slack-kanal på formen `#[team]-alerts` i Saga-slacken. Denne kan brukes av teamet selv for å sende alerts fra GCP, og vil også motta varslinger om budsjett-overskridelser.
 
 ### Tilgangsgrupper
 
